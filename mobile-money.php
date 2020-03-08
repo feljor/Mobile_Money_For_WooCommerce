@@ -379,7 +379,7 @@ function mobile_money_for_woocommerce_admin_new_column($columns){
 }
 
 /**
- * Load data in new column
+ * Charger les données dans la nouelle colonne
  */
 add_action( 'manage_shop_order_posts_custom_column', 'mobile_money_for_woocommerce_admin_column_value', 2 );
 function mobile_money_for_woocommerce_admin_column_value($column){
