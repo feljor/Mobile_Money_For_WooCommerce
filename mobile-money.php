@@ -66,6 +66,9 @@ function mobile_money_for_woocommerce_plugin_activation(){
 	class mobile_money_for_woocommerce extends WC_Payment_Gateway {
 
 		public $MMFWC_number;
+
+		// Enlever ces commentaires pour plusieurs numéros mobile money
+
 //		public $MMFWC_number2;
 //		public $MMFWC_number3;
 		public $txt_description;
@@ -99,6 +102,9 @@ function mobile_money_for_woocommerce_plugin_activation(){
 			$this->init_settings();
 			
 			$this->MMFWC_number = $this->get_option('MMFWC_number');
+
+            // Enlever ces commentaires pour plusieurs numéros mobile money
+
 //			$this->MMFWC_number2 = $this->get_option('MMFWC_number2');
 //			$this->MMFWC_number3 = $this->get_option('MMFWC_number3');
 			$this->number_type 	= $this->get_option('number_type');
@@ -191,6 +197,9 @@ function mobile_money_for_woocommerce_plugin_activation(){
 			global $woocommerce;
 			echo wpautop( wptexturize( " ".$this->txt_description." ") );
 			echo wpautop( wptexturize( "Mobile Money: " .$this->MMFWC_number ) );
+
+			// Enlever ce commentaire pour plusieurs numéros Mobile Money
+
 //			echo wpautop( wptexturize( "Mobile Money 2: " .$this->MMFWC_number2 ) );
 //			echo wpautop( wptexturize( "Mobile Money 3: " .$this->MMFWC_number3 ) );
 
