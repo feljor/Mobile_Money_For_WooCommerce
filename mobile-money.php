@@ -66,8 +66,8 @@ function mobile_money_for_woocommerce_plugin_activation(){
 	class mobile_money_for_woocommerce extends WC_Payment_Gateway {
 
 		public $MMFWC_number;
-		public $MMFWC_number2;
-		public $MMFWC_number3;
+//		public $MMFWC_number2;
+//		public $MMFWC_number3;
 		public $txt_description;
 		public $number_type;
 		public $order_status;
@@ -99,8 +99,8 @@ function mobile_money_for_woocommerce_plugin_activation(){
 			$this->init_settings();
 			
 			$this->MMFWC_number = $this->get_option('MMFWC_number');
-			$this->MMFWC_number2 = $this->get_option('MMFWC_number2');
-			$this->MMFWC_number3 = $this->get_option('MMFWC_number3');
+//			$this->MMFWC_number2 = $this->get_option('MMFWC_number2');
+//			$this->MMFWC_number3 = $this->get_option('MMFWC_number3');
 			$this->number_type 	= $this->get_option('number_type');
 			$this->txt_description 	= $this->get_option('txt_description');
 			$this->order_status = $this->get_option('order_status');
@@ -141,23 +141,26 @@ function mobile_money_for_woocommerce_plugin_activation(){
                     'options'     => wc_get_order_statuses()
                 ),				
 				'MMFWC_number'	=> array(
-					'title'			=> 'Airtel Money',
-					'description' 	=> __( 'Ajouter un numéro Airtel Money qui sera affiché à vos clients sur la page de paiement', $this->domain ),
+					'title'			=> 'Mobile Money',
+					'description' 	=> __( 'Ajouter un numéro Mobile Money qui sera affiché à vos clients sur la page de paiement', $this->domain ),
 					'type'			=> 'text',
 					'desc_tip'      => true
 				),
-				'MMFWC_number2'	=> array(
-					'title'			=> 'Orange Money',
+
+				// Enlevez le commentaire si vous avez plusieurs numéros mobile money.
+
+                /*'MMFWC_number2'	=> array(
+					'title'			=> 'Mobile Money 2',
 					'description' 	=> __( 'Ajouter un numéro Orange Money qui sera affiché à vos clients sur la page de paiement', $this->domain ),
 					'type'			=> 'text',
 					'desc_tip'      => true
 				),
 				'MMFWC_number3'	=> array(
-					'title'			=> 'M-Pesa',
+					'title'			=> 'Mobile Money 3',
 					'description' 	=> __( 'Ajouter un numéro M-Pesa qui sera affiché à vos clients sur la page de paiement', $this->domain ),
 					'type'			=> 'text',
 					'desc_tip'      => true
-				),
+				),*/
 				'number_type'	=> array(
 					'title'			=> __( 'Type de Compte si nécessaire.', $this->domain ),
 					'type'			=> 'select',
@@ -187,9 +190,9 @@ function mobile_money_for_woocommerce_plugin_activation(){
 
 			global $woocommerce;
 			echo wpautop( wptexturize( " ".$this->txt_description." ") );
-			echo wpautop( wptexturize( "Airtel Money: " .$this->MMFWC_number ) );
-			echo wpautop( wptexturize( "Orange Money: " .$this->MMFWC_number2 ) );
-			echo wpautop( wptexturize( "M-Pesa: " .$this->MMFWC_number3 ) );
+			echo wpautop( wptexturize( "Mobile Money: " .$this->MMFWC_number ) );
+//			echo wpautop( wptexturize( "Mobile Money 2: " .$this->MMFWC_number2 ) );
+//			echo wpautop( wptexturize( "Mobile Money 3: " .$this->MMFWC_number3 ) );
 
 			?>
 				<p><h4>Vérification de la Transaction</h4></p>
