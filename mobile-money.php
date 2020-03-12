@@ -3,19 +3,18 @@
  * Plugin Name: Mobile Money
  * Plugin URI:  https://mercipro.com/developpement-web/
  * Description: Acceptez les paiements Mobile Money sur votre site pour maximiser vos ventes aux utilisateurs qui n'ont pas de cartes bancaire.
- * Version:     1.1
+ * Version:     1.2
  * Author:      MerciPro Inc
  * Author URI:  https://mercipro.com/
  * Text Domain: mobilemoneyforwoocommerce
- * License: Commercial  
-	
+
 */
 
 if (!defined('ABSPATH')){
 	exit;
 }
 
-define('MMFWC_VER', '1.1');
+define('MMFWC_VER', '1.2');
 if (! defined('MMFWC_PLUGIN_FILE')) {
 	define('MMFWC_PLUGIN_FILE', __FILE__);
 }
@@ -141,20 +140,20 @@ function mobile_money_for_woocommerce_plugin_activation(){
                     'options'     => wc_get_order_statuses()
                 ),				
 				'MMFWC_number'	=> array(
-					'title'			=> 'Mobile Money',
-					'description' 	=> __( 'Ajouter un numéro Mobile Money qui sera affiché à vos clients sur la page de paiement', $this->domain ),
+					'title'			=> 'Airtel Money',
+					'description' 	=> __( 'Ajouter un numéro Airtel Money qui sera affiché à vos clients sur la page de paiement', $this->domain ),
 					'type'			=> 'text',
 					'desc_tip'      => true
 				),
 
                 'MMFWC_number2'	=> array(
-					'title'			=> 'Mobile Money 2',
+					'title'			=> 'Orange Money',
 					'description' 	=> __( 'Ajouter un numéro Orange Money qui sera affiché à vos clients sur la page de paiement', $this->domain ),
 					'type'			=> 'text',
 					'desc_tip'      => true
 				),
 				'MMFWC_number3'	=> array(
-					'title'			=> 'Mobile Money 3',
+					'title'			=> 'M-PESA',
 					'description' 	=> __( 'Ajouter un numéro M-Pesa qui sera affiché à vos clients sur la page de paiement', $this->domain ),
 					'type'			=> 'text',
 					'desc_tip'      => true
@@ -162,7 +161,7 @@ function mobile_money_for_woocommerce_plugin_activation(){
 
                 // Ce petit code sera utilisé aux prochaines mises à jour.
 
-				/*'number_type'	=> array(
+				'number_type'	=> array(
 					'title'			=> __( 'Type de Compte si nécessaire.', $this->domain ),
 					'type'			=> 'select',
 					'class'       	=> 'wc-enhanced-select',
@@ -175,7 +174,7 @@ function mobile_money_for_woocommerce_plugin_activation(){
 
 					),
 					'desc_tip'      => true
-				),*/
+				),
 
                 'instructions' => array(
                     'title'       	=> __( 'Message', $this->domain ),
@@ -192,9 +191,9 @@ function mobile_money_for_woocommerce_plugin_activation(){
 
 			global $woocommerce;
 			echo wpautop( wptexturize( " ".$this->txt_description." ") );
-			echo wpautop( wptexturize( "Mobile Money: " .$this->MMFWC_number ) );
-			echo wpautop( wptexturize( "Mobile Money 2: " .$this->MMFWC_number2 ) );
-			echo wpautop( wptexturize( "Mobile Money 3: " .$this->MMFWC_number3 ) );
+			echo wpautop( wptexturize( "Airtel Money: " .$this->MMFWC_number ) );
+			echo wpautop( wptexturize( "Orange Money: " .$this->MMFWC_number2 ) );
+			echo wpautop( wptexturize( "M-PESA: " .$this->MMFWC_number3 ) );
 
 			?>
 				<p><h4>Vérification de la Transaction</h4></p>
