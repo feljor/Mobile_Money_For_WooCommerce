@@ -11,12 +11,19 @@ Les instructions ci-dessous vous guideront pour la contribution dans le dévelop
 ![Activation du plugin](images/img1.PNG)
 
 #### Configuration du Plugin
-
 ![Configuration du plugin](images/img2.png)
 
 #### Formulaire du Plugin sur le Front End du Site
-
 ![Configuration du plugin](images/img3.PNG)
+
+#### Liste de commandes via l'admin du site
+![Configuration du plugin](images/img5.PNG)
+
+#### Modifier l'état de la commande
+![Configuration du plugin](images/img4.png)
+
+#### Données de la commande dans le Rapport des Ventes
+![Configuration du plugin](images/img6.png)
 
 ### Prérequis
 
