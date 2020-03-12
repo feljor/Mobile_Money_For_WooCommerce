@@ -66,11 +66,8 @@ function mobile_money_for_woocommerce_plugin_activation(){
 	class mobile_money_for_woocommerce extends WC_Payment_Gateway {
 
 		public $MMFWC_number;
-
-		// Enlever ces commentaires pour plusieurs numéros mobile money
-
-//		public $MMFWC_number2;
-//		public $MMFWC_number3;
+		public $MMFWC_number2;
+		public $MMFWC_number3;
 		public $txt_description;
 		public $number_type;
 		public $order_status;
