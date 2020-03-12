@@ -14,6 +14,10 @@ Les instructions ci-dessous vous guideront pour la contribution dans le dévelop
 
 ![Configuration du plugin](images/img2.png)
 
+#### Formulaire du Plugin sur le Front End du Site
+
+![Configuration du plugin](images/img3.png)
+
 ### Prérequis
 
 Si vous êtes l'utilisateur final, vous n'avez peut-être pas besoin de beaucoup de choses, cependant vous aurez besoin:
