@@ -8,7 +8,7 @@ Les instructions ci-dessous vous guideront pour la contribution dans le dévelop
 ## Captures
 
 #### Activation du Plugin dans Woocommerce
-![Activation du plugin](images/img1.png)
+![Activation du plugin](images/img1.PNG)
 
 #### Configuration du Plugin
 
@@ -16,7 +16,7 @@ Les instructions ci-dessous vous guideront pour la contribution dans le dévelop
 
 #### Formulaire du Plugin sur le Front End du Site
 
-![Configuration du plugin](images/img3.png)
+![Configuration du plugin](images/img3.PNG)
 
 ### Prérequis
 
