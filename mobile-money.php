@@ -153,9 +153,7 @@ function mobile_money_for_woocommerce_plugin_activation(){
 					'desc_tip'      => true
 				),
 
-				// Enlevez le commentaire si vous avez plusieurs numéros mobile money.
-
-                /*'MMFWC_number2'	=> array(
+                'MMFWC_number2'	=> array(
 					'title'			=> 'Mobile Money 2',
 					'description' 	=> __( 'Ajouter un numéro Orange Money qui sera affiché à vos clients sur la page de paiement', $this->domain ),
 					'type'			=> 'text',
@@ -166,7 +164,7 @@ function mobile_money_for_woocommerce_plugin_activation(){
 					'description' 	=> __( 'Ajouter un numéro M-Pesa qui sera affiché à vos clients sur la page de paiement', $this->domain ),
 					'type'			=> 'text',
 					'desc_tip'      => true
-				),*/
+				),
 
                 // Ce petit code sera utilisé aux prochaines mises à jour.
 
