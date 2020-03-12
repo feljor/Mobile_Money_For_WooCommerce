@@ -167,7 +167,10 @@ function mobile_money_for_woocommerce_plugin_activation(){
 					'type'			=> 'text',
 					'desc_tip'      => true
 				),*/
-				'number_type'	=> array(
+
+                // Ce petit code sera utilisé aux prochaines mises à jour.
+
+				/*'number_type'	=> array(
 					'title'			=> __( 'Type de Compte si nécessaire.', $this->domain ),
 					'type'			=> 'select',
 					'class'       	=> 'wc-enhanced-select',
@@ -180,7 +183,8 @@ function mobile_money_for_woocommerce_plugin_activation(){
 
 					),
 					'desc_tip'      => true
-				),				
+				),*/
+
                 'instructions' => array(
                     'title'       	=> __( 'Message', $this->domain ),
                     'type'        	=> 'textarea',
