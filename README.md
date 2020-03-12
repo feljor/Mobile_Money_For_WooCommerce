@@ -5,6 +5,15 @@ Cette extension ajoute une nouvelle passerelle de paiement pour WooCommerce en a
 
 Les instructions ci-dessous vous guideront pour la contribution dans le développement de ce Plugin et/ou à déployer ce plugin sur votre boutique en ligne sous WordPress et utilisant WooCommerce afin de commencer à accepter les paiements Mobile Money.
 
+## Captures
+
+#### Activation du Plugin dans Woocommerce
+![Activation du plugin](images/img1.png)
+
+#### Configuration du Plugin
+
+![Configuration du plugin](images/img2.png)
+
 ### Prérequis
 
 Si vous êtes l'utilisateur final, vous n'avez peut-être pas besoin de beaucoup de choses, cependant vous aurez besoin:
