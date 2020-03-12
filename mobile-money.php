@@ -197,9 +197,7 @@ function mobile_money_for_woocommerce_plugin_activation(){
 			global $woocommerce;
 			echo wpautop( wptexturize( " ".$this->txt_description." ") );
 			echo wpautop( wptexturize( "Mobile Money: " .$this->MMFWC_number ) );
-
-
-//			echo wpautop( wptexturize( "Mobile Money 2: " .$this->MMFWC_number2 ) );
+			echo wpautop( wptexturize( "Mobile Money 2: " .$this->MMFWC_number2 ) );
 //			echo wpautop( wptexturize( "Mobile Money 3: " .$this->MMFWC_number3 ) );
 
 			?>
