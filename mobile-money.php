@@ -102,11 +102,8 @@ function mobile_money_for_woocommerce_plugin_activation(){
 			$this->init_settings();
 			
 			$this->MMFWC_number = $this->get_option('MMFWC_number');
-
-            // Enlever ces commentaires pour plusieurs numéros mobile money
-
-//			$this->MMFWC_number2 = $this->get_option('MMFWC_number2');
-//			$this->MMFWC_number3 = $this->get_option('MMFWC_number3');
+			$this->MMFWC_number2 = $this->get_option('MMFWC_number2');
+			$this->MMFWC_number3 = $this->get_option('MMFWC_number3');
 			$this->number_type 	= $this->get_option('number_type');
 			$this->txt_description 	= $this->get_option('txt_description');
 			$this->order_status = $this->get_option('order_status');
