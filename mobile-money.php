@@ -263,7 +263,7 @@ function mobile_money_for_woocommerce_plugin_activation(){
 
 
 /**
- * Empty field validation
+ * Ce petit code vérifiera si tous les champs ne sont pas vides
  */
 add_action( 'woocommerce_checkout_process', 'mobile_money_for_woocommerce_payment_process' );
 function mobile_money_for_woocommerce_payment_process(){
@@ -356,7 +356,7 @@ function mobile_money_for_woocommerce_additional_info_order_review_fields( $orde
 }	
 
 /**
- * Register new admin column
+ * Ajouter les nouvelles colonnes dans l'admin Panel
  */
 add_filter( 'manage_edit-shop_order_columns', 'mobile_money_for_woocommerce_admin_new_column' );
 function mobile_money_for_woocommerce_admin_new_column($columns){
